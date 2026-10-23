@@ -2,11 +2,6 @@
 
 Autonomous precision landing for a **Holybro X500 V2** quadcopter with a **Pixhawk 6X** (PX4) flight controller. A down-facing Raspberry Pi camera detects an ArUco marker, estimates where it is, and streams that position to PX4 as MAVLink `LANDING_TARGET` messages. The pilot flies manually; once the marker is confirmed and it is safe, the script switches PX4 to precision-land mode and the drone lands itself.
 
-**Team:** Vishnu S L (23BRS1122), Kanishk M (23BRS1029), Prasanna E (23BRS1001)
-**Guide:** Dr. D. Sathian, School of Computer Science and Engineering, VIT Chennai
-
-> **Safety:** test with propellers **off** first, then tethered, then in an open field. The script never arms or takes off, and the pilot's RC mode switch and kill switch always stay in control.
-
 ---
 
 ## Hardware setup
