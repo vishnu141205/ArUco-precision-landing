@@ -83,20 +83,6 @@ stateDiagram-v2
 
 ---
 
-## Results
-
-Bench test with `landing_target_test.py` (vehicle disarmed):
-
-![Bench test output](docs/images/bench_test_output.png)
-
-- The marker was detected at about 0.61 m, only 2.4 cm forward and 1.8 cm left of the camera centre.
-- The frame chain is consistent: target D = vehicle D + relative D (-3.256 + 0.612 = -2.643 m).
-- 141 `LANDING_TARGET` messages were streamed to PX4 in that run. While the marker is out of view the script prints `Searching for ArUco ID 0...` and sends nothing.
-
-Camera calibration (`camera_calibration.npz`): image 640x480, fx = 649.7, fy = 651.6, cx = 325.8, cy = 262.5, reprojection RMS error 0.68 px.
-
----
-
 ## Files
 
 | File | Purpose |
@@ -133,8 +119,3 @@ pip install opencv-contrib-python numpy pymavlink
 
 Print the marker with the same dictionary and size as in the scripts (`DICT_4X4_50`, ID 0, 16.8 cm outer side), or change `MARKER_SIZE_M` and `TARGET_ID` in the code.
 
-## References
-
-- S. Garrido-Jurado et al., "Automatic generation and detection of highly reliable fiducial markers under occlusion," *Pattern Recognition*, 47(6), 2014.
-- A. Paris, B. T. Lopez, J. P. How, "Dynamic Landing of an Autonomous Quadrotor on a Moving Platform in Turbulent Wind Conditions," arXiv:1909.11071.
-- OpenCV ArUco detection tutorial, PX4 Precision Landing guide, MAVLink `LANDING_TARGET` message.
