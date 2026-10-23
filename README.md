@@ -15,14 +15,6 @@ Autonomous precision landing for a **Holybro X500 V2** quadcopter with a **Pixha
 | **RC transmitter** | Manual flight, flight-mode switch, kill switch |
 | **ArUco marker** | `DICT_4X4_50`, ID 0, 16.8 cm outer side (6 cells x 2.8 cm) |
 
-<p align="center">
-  <img src="docs/images/x500_v2.png" height="180" alt="Holybro X500 V2 frame">
-  <img src="docs/images/pixhawk_6x.png" height="180" alt="Pixhawk 6X flight controller">
-  <img src="docs/images/raspberry_pi_camera.png" height="180" alt="Raspberry Pi with camera module">
-  <img src="docs/images/aruco_marker_id0.png" height="180" alt="ArUco marker ID 0">
-</p>
-
-The camera image top is the aircraft front and the image right is the aircraft right.
 
 ---
 
